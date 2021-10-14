@@ -1,6 +1,11 @@
 function solve(start, end) {
-    var cls = (start - end) * 1 - 1
-    console.log(cls)
+    const total_platform = 43
+    var cls = Math.abs(start - end)
+    var in_result = cls - 1
+    var out_reslut = total_platform - cls - 1
+    
+    var result = ((2 ** in_result) + (2 ** out_reslut)) - 1
+    console.log(result)
 }
 
-solve(1,5)
+solve(1, 2)
