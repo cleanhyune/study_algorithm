@@ -8,4 +8,8 @@ function solve(start, end) {
     console.log(result)
 }
 
+function official_solve() {
+    
+}
+
 solve(1, 2)
