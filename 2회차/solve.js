@@ -9,7 +9,7 @@ function solve(start, end) {
 }
 
 function official_solve() {
-    
+     var a = 2
 }
 
 solve(1, 2)
