@@ -3,4 +3,8 @@ function solve() {
     var a = 1
 }
 
+function officialSolve() {
+    
+}
+
 solve();
