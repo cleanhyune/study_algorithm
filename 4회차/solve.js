@@ -32,8 +32,7 @@ function solve(length) {
     for(hour=0; hour<24; hour++) {
         for(min=0; min<60; min++) {
             for(sec=0; sec<60; sec++) {
-                const na = countSegmentByTime(hour, min ,sec)
-                if(na === length) {
+                if(countSegmentByTime(hour, min ,sec) === length) {
                     resultTime.push(`${regexTime(hour)}시 ${regexTime(min)}분 ${regexTime(sec)}초`)
                     result++ 
                 }
