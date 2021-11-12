@@ -35,4 +35,23 @@ function solve(line) {
 
 }
 
+function solveAtHome(line) {
+
+    result = 0
+    arr = []
+
+    for(i=0;i<line;i++) {
+        var newArr  = []
+        var prevArr = arr[i - 1]
+        if(prevArr === undefined) {
+            newArr = [1]
+        }
+
+        arr.push
+
+    }
+
+
+}
+
 solve(46)
