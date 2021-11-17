@@ -30,7 +30,7 @@ function solve() {
             short = j
 
             var sizeCount = func(long, short)
-            if(sizeCount === 5) {
+            if(sizeCount === 5) { 
                 result++
             }
 
