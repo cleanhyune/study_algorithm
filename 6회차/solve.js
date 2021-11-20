@@ -1,26 +1,24 @@
 function solve() {
     
     var result = 0
-    const maxLine = 5
+    const maxLine = 1000
 
     const func = (long, short) => {
-
-        console.log(long, short)
-
         var cnt = 1
+        var boxSize = 0
 
-        var minSize = 0
-        if(short > 1) 
-            minSize = short*2
-        else minSize = 1
-
+        if(short > 1) boxSize = short*2
+        else boxSize = 1
         
-        if(long*short - minSize > 0) {
-            var a = long*short // 6
-            var b  = minSize   // 4 
-            cnt = cnt+ func()
-        }
+        if(long*short - boxSize > 0) {
+            var a = long - short
+            var b = short
 
+            var newLong = a > b ? a : b
+            var newShort = a > b ? b : a
+
+            cnt += func(newLong, newShort)
+        }
         return cnt;
     }
 
@@ -30,7 +28,7 @@ function solve() {
             short = j
 
             var sizeCount = func(long, short)
-            if(sizeCount === 5) { 
+            if(sizeCount === 20) { 
                 result++
             }
 
